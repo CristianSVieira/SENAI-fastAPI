@@ -65,6 +65,8 @@ jobs:
           script: |
             # teste de acesso
             echo "Acesso liberado"
+
+            sudo apt install docker -y
             
             # fazer o pull da imagem dockerhub
             sudo docker pull cristiansvieira/senai_api_ta:latest
