@@ -3,7 +3,7 @@ name: Python application
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [ "prin" ]
 
 jobs:
   build:
@@ -47,8 +47,8 @@ jobs:
         with:
           push: true
           tags: |
-              ngaloni/senai_api_ta:latest
-              ngaloni/senai_api_ta:${{github.sha}}
+              cristiansvieira/senai_api_ta:latest
+              cristiansvieira/senai_api_ta:${{github.sha}}
           
   DEPLOY:
     name: Implantando na EC2
