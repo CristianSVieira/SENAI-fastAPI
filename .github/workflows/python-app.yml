@@ -111,6 +111,8 @@ jobs:
             # teste de acesso
             echo "Acesso liberado"
 
+            sudo rm /var/lib/dpkg/lock
+
             sudo apt update
             sudo apt-get install ca-certificates curl gnupg -y
 
